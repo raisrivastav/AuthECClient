@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "RP1bk6QD8k7bXSY/RnpL6WDzNN7y37C+53iAvCPSeso=",
+  "Source": "AuthEcClientApi",
+  "BasePath": "_content/AuthEcClientApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
