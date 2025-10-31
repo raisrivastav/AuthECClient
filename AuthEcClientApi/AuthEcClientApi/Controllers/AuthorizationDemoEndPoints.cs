@@ -21,6 +21,19 @@ namespace AuthEcClientApi.Controllers
                         {
                             return "Library member only";
                         });
+
+            app.MapGet("/ApplyForMaternityLeave", [Authorize(Roles = "Teacher", Policy = "FemaleOnly")] () =>
+            {
+                return "Applied for maternity leave.";
+            });
+
+            app.MapGet("/Under10AndFemaleOnly", 
+                [Authorize(Policy = "Under10")]
+                [Authorize(Policy = "FemaleOnly")] () =>
+            {
+                return "Under 10 and Female only.";
+            });
+
             return app;
         }
 
