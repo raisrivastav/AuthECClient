@@ -27,9 +27,4 @@ export class DashboardComponent implements OnInit {
       error: (err:any) => console.log('error while retreiving user profile ', err)
     });
   }
-
-  onLogout(){
-    this.authService.deleteToken();
-    this.router.navigateByUrl('/signin');
-  }
 }
